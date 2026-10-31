@@ -27,7 +27,32 @@ button, input { font: inherit; }
 .spacer { flex: 1; }
 .who { color: var(--steel); font-size: .9rem; }
 .page { max-width: 860px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-.footer { text-align: center; padding: 1.5rem 1rem; color: var(--steel); font-size: .85rem; border-top: 1px solid var(--rule); }
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  width: 100%;
+  flex: 1;              /* takes all spare height, pushing the footer down */
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1rem;
+  border-top: 1px solid var(--rule);
+  background: var(--panel);
+  color: var(--steel);
+  font-size: .85rem;
+  text-align: center;
+}
+
+.footer p { margin: 0; }
+
+
+
 .primary { background: var(--blue); color: #fff; border: 0; border-radius: 6px; padding: .55rem 1.1rem; cursor: pointer; font-weight: 500; }
 .primary:hover:not(:disabled) { background: var(--blue-dark); }
 .primary:disabled, .chip:disabled { opacity: .55; cursor: default; }

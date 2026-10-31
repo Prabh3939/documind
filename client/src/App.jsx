@@ -22,8 +22,8 @@ function Shell({ children }) {
       </header>
       <main className="page">{children}</main>
       <footer className="footer">
-        <p>Prabhpreet Singh</p>
-        <p>DocuMind &copy; 2026</p>
+        <p>DocuMind @ 2026  | Prabhpreet Singh</p>
+        
       </footer>
 
     </>

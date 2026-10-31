@@ -21,6 +21,11 @@ function Shell({ children }) {
         <button className="ghost" onClick={logout}>Sign out</button>
       </header>
       <main className="page">{children}</main>
+      <footer className="footer">
+        <p>Prabhpreet Singh</p>
+        <p>DocuMind &copy; 2026</p>
+      </footer>
+
     </>
   );
 }
